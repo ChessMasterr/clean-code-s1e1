@@ -1,5 +1,5 @@
 /* Basic Style */
-/* refactor(basic-3.5, 3.8) */
+/* refactor(basic-3.6) */
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -25,11 +25,13 @@
   }
   
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
