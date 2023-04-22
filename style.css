@@ -29,7 +29,9 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+
+.task-label,
+.task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -38,10 +40,12 @@
   display: flex;
 }
 .todo-list,
-.complet-list {
+.completed-list {
   margin: 0;
   padding: 0px;
 }
+.task-elem,
+.section__title {
 .task-elem,
 .section__title {
   list-style: none;
@@ -49,8 +53,12 @@
 .task-text,
 .task-checkbox,
 .button {
+.task-text,
+.task-checkbox,
+.button {
   outline: none;
 }
+.button {
 .button {
   background: none;
   border: 0px;
@@ -60,6 +68,7 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+.button:hover {
 .button:hover {
   color: #3a3a3a;
 }
@@ -74,6 +83,7 @@
   text-transform: uppercase;
 }
 .task-text {
+.task-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -86,6 +96,7 @@
   color: #888;
 }
 .task-text:focus {
+.task-text:focus {
   color: #333;
 }
 
@@ -94,11 +105,12 @@
   display: block;
   margin: 0 0 20px;
 }
-.add-tasks__input {
+#new-task {
   width: 318px;
 }
 
 /* Task list */
+.task-elem {
 .task-elem {
   overflow: hidden;
   padding: 20px 0;
@@ -111,12 +123,18 @@
 .task-label,
 .task-text,
 .button {
+.task-elem > .task-checkbox,
+.task-label,
+.task-text,
+.button {
   vertical-align: middle;
 }
 
 .task-checkbox {
+.task-checkbox {
   margin: 0 10px;
 }
+.task-label {
 .task-label {
   padding-left: 10px;
   box-sizing: border-box;
@@ -126,31 +144,35 @@
 .task-text {
   width: 226px;
 }
-.delete-img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+.delete img:hover {
 .delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.complet-list .task-label {
+.completed-list .task-label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task-elem .task-text {
+.task-elem .task-text {
   display: none;
 }
 
+.edit-mode .task-text {
 .edit-mode .task-text {
   display: inline-block;
   width: 224px;
 }
 
+.edit-mode .task-label {
 .edit-mode .task-label {
   display: none;
 }
