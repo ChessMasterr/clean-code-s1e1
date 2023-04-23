@@ -1,4 +1,3 @@
-<!-- refactor(basic-3.6) -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,45 +24,67 @@
     <main class="main">
       <section class="add-tasks">
         <h3 class="section__title">Add Item</h3>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task-text" type="text" />
-          <button class="button">Add</button>
+        <div class="add-tasks__wrapper">
+          <input class="add-tasks__input task-text" type="text" />
+          <button class="add-tasks__btn button">Add</button>
         </div>
       </section>
       <section class="todo-tasks">
         <h3 class="section__title">Todo</h3>
         <ul class="todo-list">
-          <li class="task-elem">
-            <input class="task-checkbox" type="checkbox" />
-            <label class="task-label">Pay Bills</label>
-            <input type="text" class="task-text" />
-            <button class="edit button">Edit</button>
-            <button class="delete button">
-              <img src="./remove.svg" alt="Icon for remove" />
+          <li class="todo-list__elem task-elem">
+            <input class="todo-list__checkbox task-checkbox" type="checkbox" />
+            <label class="todo-list__task-label task-label">Pay Bills</label>
+            <input type="text" class="todo-list__task-text task-text" />
+            <button class="todo-list__edit-btn btn-edit button">Edit</button>
+            <button class="todo-list__delete-btn btn-delete button">
+              <img
+                class="todo-list__delete-img delete-img"
+                src="./remove.svg"
+                alt="Icon for remove"
+              />
             </button>
           </li>
-          <li class="edit-mode task-elem">
-            <input class="task-checkbox" type="checkbox" />
-            <label class="task-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task-text" />
-            <button class="edit button">Save</button>
-            <button class="delete button">
-              <img src="./remove.svg" alt="Icon for remove" />
+          <li class="todo-list__elem edit-mode task-elem">
+            <input class="todo-list__checkbox task-checkbox" type="checkbox" />
+            <label class="todo-list__task-label task-label">Go Shopping</label>
+            <input
+              type="text"
+              value="Go Shopping"
+              class="todo-list__task-text task-text"
+            />
+            <button class="todo-list__edit-btn btn-edit button">Save</button>
+            <button class="todo-list__delete-btn btn-delete button">
+              <img
+                class="todo-list__delete-img delete-img"
+                src="./remove.svg"
+                alt="Icon for remove"
+              />
             </button>
           </li>
         </ul>
       </section>
 
-      <section class="completed-tasks">
+      <section class="complet-tasks">
         <h3 class="section__title">Completed</h3>
-        <ul class="completed-list">
-          <li class="task-elem">
-            <input class="task-checkbox" type="checkbox" checked />
-            <label class="task-label">See the Doctor</label>
-            <input type="text" class="task-text" />
-            <button class="edit button">Edit</button>
-            <button class="delete button">
-              <img src="./remove.svg" alt="Icon for remove" />
+        <ul class="complet-list">
+          <li class="complet-list__elem task-elem">
+            <input
+              class="complet-list__checkbox task-checkbox"
+              type="checkbox"
+              checked
+            />
+            <label class="complet-list__task-label task-label"
+              >See the Doctor</label
+            >
+            <input type="text" class="complet-list__task-text task-text" />
+            <button class="complet-list__edit-btn btn-edit button">Edit</button>
+            <button class="complet-list__delete-btn btn-delete button">
+              <img
+                class="complet-list__delete-img delete-img"
+                src="./remove.svg"
+                alt="Icon for remove"
+              />
             </button>
           </li>
         </ul>

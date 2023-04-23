@@ -1,5 +1,4 @@
 /* Basic Style */
-/* refactor(basic-3.6) */
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -36,11 +35,11 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-tasks__wrapper {
   display: flex;
 }
 .todo-list,
-.completed-list {
+.complet-list {
   margin: 0;
   padding: 0px;
 }
@@ -96,7 +95,7 @@
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.add-tasks__input {
   width: 318px;
 }
 
@@ -128,17 +127,17 @@
 .task-text {
   width: 226px;
 }
-.delete img {
+.delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-list .task-label {
+.complet-list .task-label {
   text-decoration: line-through;
   color: #888;
 }
